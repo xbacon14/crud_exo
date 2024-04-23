@@ -29,7 +29,7 @@ public class CotizacionService {
 			Cotizacion cotizacionActual = result.get(0);
 			Cotizacion cotizacionAnterior = result.size() > 1 ? result.get(1) : null;
 
-			return ResponseEntity.ok(new CotizacionResponse(cotizacionActual, cotizacionAnterior, LocalDateTime.now()));
+			return ResponseEntity.ok(new CotizacionResponse(cotizacionAnterior, cotizacionActual, LocalDateTime.now()));
 		}
 		return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
 

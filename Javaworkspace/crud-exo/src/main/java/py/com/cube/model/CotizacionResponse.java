@@ -2,5 +2,5 @@ package py.com.cube.model;
 
 import java.time.LocalDateTime;
 
-public record CotizacionResponse(Cotizacion anterior, Cotizacion actual, LocalDateTime timestamp) {
+public record CotizacionResponse(Cotizacion cotizacionAnterior, Cotizacion cotizacionActual, LocalDateTime timestamp) {
 }
